@@ -65,10 +65,10 @@ public class RestApiMongoDbApplication {
 		}
 		
 		if (students.isEmpty()) {
-			System.out.println("Inserting student "+student); // eklenen öğrencinin emaili daha önce kullanılmamışsa veritabanına ekler
+			System.out.println("Inserting student "+student); 
 			repository.insert(student);
 		}else {
-			System.out.println(student+ " already exists"); // email daha önce kullanılmışsa zaten var şeklinde geri dönüş yapar.
+			System.out.println(student+ " already exists"); 
 		}
 	}
 }
